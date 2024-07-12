@@ -1,0 +1,18 @@
+# -- Markup --
+# These settings are required for the theme to function.
+
+[goldmark]
+[goldmark.renderer]
+  unsafe = true
+
+[highlight]
+  noClasses = false
+  codeFences = true
+  guessSyntax = true
+  lineNos = true
+  # style = "catppuccin-mocha"
+  style = "onedark"
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 4

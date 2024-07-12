@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="zh-cn" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Hexo静态博客搭建（基础篇） &middot; OrangeTree</title>
+  <meta name="title" content="Hexo静态博客搭建（基础篇） &middot; OrangeTree" />
+  
+  
+  <meta name="keywords" content="Hexo, 博客, " />
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.c79255bf9523e0025100f65f6196a25beaa8c4e79e7a95f5d6090e2ee99bda66c9be73cbed1af43b6dd95510f50df54ec8c82904f7dca69be6bcfaa7164f7c95.css"
+    integrity="sha512-x5JVv5Uj4AJRAPZfYZaiW&#43;qoxOeeepX11gkOLumb2mbJvnPL7Rr0O23ZVRD1DfVOyMgpBPfcppvmvPqnFk98lQ==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8b56b0fd46524eaecbfe33f576b8ba2cd2a122521a89f8229a95be0b635a7ac8e774eb1d8b8b93b32bbd677c3deb734aeea62917443f124d5bf5478859767380.js"
+    integrity="sha512-i1aw/UZSTq7L/jP1dri6LNKhIlIaifgimpW&#43;C2NaesjndOsdi4uTsyu9Z3w963NK7qYpF0Q/Ek1b9UeIWXZzgA==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/">
+  <meta property="og:site_name" content="OrangeTree">
+  <meta property="og:title" content="Hexo静态博客搭建（基础篇）">
+  <meta property="og:description" content="如果你某一天有了一个搭建个人博客的想法，但是因为资金不足、技术栈太浅等原因导致难以从零开始搭建自己的网站，那么用Hexo搭建一个静态博客就是一个不错的选择！本站是也是一个基于Hexo搭建的个人博客，将我的搭建过程分享出来，供感兴趣的朋友参考。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-19T19:34:28+00:00">
+    <meta property="article:modified_time" content="2023-10-19T19:34:28+00:00">
+    <meta property="article:tag" content="Hexo">
+    <meta property="article:tag" content="博客">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hexo静态博客搭建（基础篇）">
+  <meta name="twitter:description" content="如果你某一天有了一个搭建个人博客的想法，但是因为资金不足、技术栈太浅等原因导致难以从零开始搭建自己的网站，那么用Hexo搭建一个静态博客就是一个不错的选择！本站是也是一个基于Hexo搭建的个人博客，将我的搭建过程分享出来，供感兴趣的朋友参考。">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Hexo静态博客搭建（基础篇）",
+    "headline": "Hexo静态博客搭建（基础篇）",
+    
+    "abstract": "如果你某一天有了一个搭建个人博客的想法，但是因为资金不足、技术栈太浅等原因导致难以从零开始搭建自己的网站，那么用Hexo搭建一个静态博客就是一个不错的选择！本站是也是一个基于Hexo搭建的个人博客，将我的搭建过程分享出来，供感兴趣的朋友参考。",
+    "inLanguage": "zh-cn",
+    "url" : "http:\/\/localhost:1313\/posts\/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87\/",
+    "author" : {
+      "@type": "Person",
+      "name": "WaTerBirD"
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-10-19T19:34:28\u002b00:00",
+    "datePublished": "2023-10-19T19:34:28\u002b00:00",
+    
+    "dateModified": "2023-10-19T19:34:28\u002b00:00",
+    
+    "keywords": ["Hexo","博客"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "281"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="WaTerBirD" />
+  
+  
+  
+  <link href="mailto:tylimispoa@gmail.com" rel="me" />
+  
+  
+  <link href="https://github.com/sitaye/" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCPDEhbYa-XKdySdQ97LI5FzBWSBcrbTYM",
+      authDomain: "AIzaSyCPDEhbYa-XKdySdQ97LI5FzBWSBcrbTYM",
+      projectId: "hugo-be2d3",
+      storageBucket: "hugo-be2d3.appspot.com",
+      messagingSenderId: "94891274546",
+      appId: "1:94891274546:web:5b51978f253777b663672b",
+      measurementId: "G-H26VJ2H6V1"
+    };
+
+    var app = firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+    var auth = firebase.auth();
+
+  </script>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>跳过正文</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">OrangeTree</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        博客
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        分类
+    </p>
+</a>
+
+
+
+            
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a  class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="">
+      父级
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+          
+          <p class="text-sm font-sm" title="">
+            模板子目录 1
+          </p>
+        </a>
+        
+        <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+          
+          <p class="text-sm font-sm" title="">
+            模板子目录 2
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            
+            
+  <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        标签
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            博客
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            分类
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                     
+  <li class="mt-1">
+    <a class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            父级
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-sm font-small" title="">
+            模板子目录 1
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-sm font-small" title="">
+            模板子目录 2
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/tags/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            标签
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                <hr>
+                <ul
+                    class="flex mt-4 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+
+                    
+                    <li class="mb-1">
+                        <a href=""  class="flex items-center">
+                            
+                            <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+                                一个有趣的话题
+                            </p>
+                        </a>
+                    </li>
+                    
+                    <li class="mb-1">
+                        <a href=""  class="flex items-center">
+                            
+                            <span  class="mr-3" >
+                                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+                            </span>
+                            
+                            <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="">
+                                我的优秀文集
+                            </p>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+<div class="main-menu flex pb-3 flex-col items-end justify-between md:justify-start space-x-3" >
+    <div class="hidden md:flex items-center space-x-5">
+        
+        <a href=""  class="flex items-center">
+            
+            <p class="text-xs font-light text-gray-500 hover:text-gray-900" title="">
+                一个有趣的话题
+            </p>
+        </a>
+        
+        <a href=""  class="flex items-center">
+            
+            <span  class="mr-1" >
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+  </span>
+
+
+            </span>
+            
+            <p class="text-xs font-light text-gray-500 hover:text-gray-900" title="">
+                我的优秀文集
+            </p>
+        </a>
+        
+    </div>
+</div>
+
+
+
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >OrangeTree</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/"
+      >Hexo静态博客搭建（基础篇）</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Hexo静态博客搭建（基础篇）
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-10-19 19:34:28 &#43;0000 UTC">2023 October 19</time><span class="px-2 text-primary-500">&middot;</span><span>281 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span id="views_posts\Hexo静态博客搭建（基础篇）.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span id="likes_posts\Hexo静态博客搭建（基础篇）.md"
+    class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+    title="likes">loading</span>
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+</span>
+</span><span class="px-2 text-primary-500">&middot;</span><span>
+    <button id="button_likes"
+        class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+        onclick="process_article()">
+        <span id="button_likes_heart" style="display:none" class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+  </span>
+
+ </span>
+        <span id="button_likes_emtpty_heart" class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<path fill="currentColor" d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/></svg>
+  </span>
+
+</span>
+        <span id="button_likes_text">&nbsp;Like</span>
+    </button>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-什么是hexo">1. 什么是Hexo？</a></li>
+    <li><a href="#2-安装hexo">2. 安装Hexo</a>
+      <ul>
+        <li><a href="#2-1-准备工作">2. 1 准备工作</a></li>
+        <li><a href="#2-2-安装hexo">2. 2 安装Hexo</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-部署到github">3. 部署到Github</a>
+      <ul>
+        <li><a href="#3-1-遇到的问题">3. 1 遇到的问题</a></li>
+        <li><a href="#3-2-创建仓库">3. 2 创建仓库</a></li>
+        <li><a href="#3-3-生成本地ssh">3. 3 生成本地SSH</a></li>
+        <li><a href="#3-4-github创建ssh-key">3. 4 Github创建SSH Key</a></li>
+        <li><a href="#3-5-配置_configyml">3. 5 配置<code>_config.yml</code></a></li>
+        <li><a href="#3-6-部署到github">3. 6 部署到Github</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-设置个人域名">4. 设置个人域名</a>
+      <ul>
+        <li><a href="#4-1-一点准备">4. 1 一点准备</a></li>
+        <li><a href="#4-2-域名申请">4. 2 域名申请</a></li>
+        <li><a href="#4-3-域名设置">4. 3 域名设置</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-总结">5. 总结</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-什么是hexo">1. 什么是Hexo？</a></li>
+    <li><a href="#2-安装hexo">2. 安装Hexo</a>
+      <ul>
+        <li><a href="#2-1-准备工作">2. 1 准备工作</a></li>
+        <li><a href="#2-2-安装hexo">2. 2 安装Hexo</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-部署到github">3. 部署到Github</a>
+      <ul>
+        <li><a href="#3-1-遇到的问题">3. 1 遇到的问题</a></li>
+        <li><a href="#3-2-创建仓库">3. 2 创建仓库</a></li>
+        <li><a href="#3-3-生成本地ssh">3. 3 生成本地SSH</a></li>
+        <li><a href="#3-4-github创建ssh-key">3. 4 Github创建SSH Key</a></li>
+        <li><a href="#3-5-配置_configyml">3. 5 配置<code>_config.yml</code></a></li>
+        <li><a href="#3-6-部署到github">3. 6 部署到Github</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-设置个人域名">4. 设置个人域名</a>
+      <ul>
+        <li><a href="#4-1-一点准备">4. 1 一点准备</a></li>
+        <li><a href="#4-2-域名申请">4. 2 域名申请</a></li>
+        <li><a href="#4-3-域名设置">4. 3 域名设置</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-总结">5. 总结</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = decodeURIComponent(e.attr('id'));
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+           
+            $(e).removeClass('active').siblings('ul').hide();
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
+        
+        onScroll();
+      });
+    }
+  })();
+
+
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>如果你某一天有了一个<strong>搭建个人博客</strong>的想法，但是因为<u>资金不足</u>、<u>技术栈太浅</u>等原因导致难以从零开始搭建自己的网站，那么用<strong>Hexo</strong>搭建一个静态博客就是一个不错的选择！本站是也是一个基于Hexo搭建的个人博客，将我的搭建过程分享出来，供感兴趣的朋友参考。</p>
+ <!-- more -->
+
+
+<h2 class="relative group">1. 什么是Hexo？ 
+    <div id="1-%E4%BB%80%E4%B9%88%E6%98%AFhexo" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFhexo" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>在搭建Hexo静态博客之前，先了解下什么是Hexo以及需要准备的前期工作。</p>
+<p>Hexo是一个快速、简洁且高效的博客框架（<em>Official</em>），将个人博客部署到Github上，通过Markdown格式展现博客内容，相较于其他有后端的如Wordpress等，上手更快、更适合新手搭建博客。（由于只涉及到一些前端的内容，所以对后端不太熟悉也完全没有问题！）</p>
+<p>在搭建博客之前，<strong>你需要准备好以下几个内容：</strong></p>
+<ul>
+<li>一台搭载Windows/Linux系统的电脑（如果你是Mac系统，建议查看<a href="https://hexo.io/zh-cn/docs/" target="_blank">官方文档</a>，在这里就不进行赘述了）</li>
+<li>能科学上网的工具</li>
+<li>注册一个Github账号</li>
+<li>熟悉Markdown的使用方法（不会其实也没问题，学习之后能更快上手博客文章的写作）</li>
+</ul>
+<p>准备好上面的东西之后，那让我们开始吧。</p>
+
+
+<h2 class="relative group">2. 安装Hexo 
+    <div id="2-%E5%AE%89%E8%A3%85hexo" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-%E5%AE%89%E8%A3%85hexo" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">2. 1 准备工作 
+    <div id="2-1-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-1-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>在正式安装Hexo之前，<strong>确保你的电脑上面有安装有</strong>：</p>
+<ul>
+<li><a href="https://nodejs.org/" target="_blank">Nodejs</a></li>
+<li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+</ul>
+<p>Nodejs为JavaScript提供运行环境，Git用于将你的博客部署到Github上。</p>
+<p>Windows用户可直接<strong>在官网上下载安装</strong>，Linux用户可以通过<strong>终端</strong>获取：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt-get install nodejs
+</span></span><span class="line"><span class="cl">sudo apt-get install npm
+</span></span><span class="line"><span class="cl">sudo apt-get install git
+</span></span></code></pre></div><p>同时确保你的版本为最新版本，避免出现版本不兼容的问题。</p>
+
+
+<h3 class="relative group">2. 2 安装Hexo 
+    <div id="2-2-%E5%AE%89%E8%A3%85hexo" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-2-%E5%AE%89%E8%A3%85hexo" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>打开终端，输入命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install -g hexo-cli
+</span></span></code></pre></div><p>这个命令下载了Hexo部署博客的相关依赖，它提供了基本的部署生成工具，现在你可以使用这个工具来生成你的博客了。</p>
+<p>此时你要创建一个<u>文件夹</u>用于在<strong>本地</strong>存储你的个人博客，在你想安装博客的目录下输入命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo init XX
+</span></span></code></pre></div><p>上面<code>XX</code>的部分填写任何名字均可（就是你能找到你部署博客的名字），然后在这个目录下就会生成一个新的名为<code>XX</code>的文件夹，进入该文件夹，输入命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install
+</span></span></code></pre></div><p>安装依赖文件。至此，一个简单的博客就搭建完成了。</p>
+<p>搭建好博客之后，该怎么查看在网页上的效果呢？Hexo官方给了几个很简单的命令，帮助你更快上手Hexo博客搭建部署：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo clean <span class="c1"># 清理缓存和静态文件</span>
+</span></span><span class="line"><span class="cl">hexo new <span class="o">[</span>layout<span class="o">]</span> &lt;title&gt; <span class="c1"># 生成新的文章</span>
+</span></span><span class="line"><span class="cl">hexo generate <span class="c1"># 简记为 hexo g, 生成博客的静态文件</span>
+</span></span><span class="line"><span class="cl">hexo server <span class="c1"># 简记为 hexo s, 启动本地服务器（查看部署到网页的效果）</span>
+</span></span><span class="line"><span class="cl">hexo deploy <span class="c1"># 简记为 hexo d, 部署到网页</span>
+</span></span></code></pre></div><p>更多命令请参考<a href="https://hexo.io/zh-cn/docs/" target="_blank">官方文档</a>。现在，在这个文件夹打开的终端中输入：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl">hexo s
+</span></span></code></pre></div><p>等待一会儿直到你看到类似如下的图片：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/hexo%E5%88%9D%E5%A7%8B%E5%8C%96.png" alt="这是你看到的内容" />
+      
+    </figure>
+</p>
+<p>然后在浏览器的搜索框中输入<code>localhost:4000</code>，就可以看到你部署的博客在网页中的样子了。如果你想退出预览，那么在刚才的终端页面中按下键盘上的 <em><strong>Ctrl+C</strong></em> 即可退出本地预览。</p>
+
+
+<h2 class="relative group">3. 部署到Github 
+    <div id="3-%E9%83%A8%E7%BD%B2%E5%88%B0github" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-%E9%83%A8%E7%BD%B2%E5%88%B0github" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">3. 1 遇到的问题 
+    <div id="3-1-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-1-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>在退出本地预览之后，再次访问<code>localhost:4000</code>，发现居然无法访问了。可恶，搭建好的博客关掉本地服务器之后就不能再看了，有没有什么办法能让我通过网页直接浏览呢？答案是<strong>把网页部署到Github上</strong>。</p>
+<p>Hexo生成静态博客的实质是生成了<strong>静态网页文件</strong>，然后通过访问这些网页文件达到浏览博客的效果。Github作为全球最大的代码托管平台，将本地的文件部署Github上，再通过Github提供的网址访问，就能直接在网页上浏览你的博客了。当然你也可以选择购买一台云服务器直接部署到你的云服务器上，不过博主手头比较紧辣，所以还是选择Free的Github吧。</p>
+
+
+<h3 class="relative group">3. 2 创建仓库 
+    <div id="3-2-%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-2-%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>登陆到Github之后（如果登陆不上Github，建议检查是否缺少相应的条件），点击右上角的 + 号，再点击【<strong>New repository</strong>】：</p>
+<p>![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/hexo repo1.png)</p>
+<p>进去之后，将这个仓库的名字改为 <code>XX.github.io</code>，其中 <code>XX</code> 为你的用户名（记住，一定要为你的<strong>用户名</strong>不是昵称！）：</p>
+<p>![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/hexo repo2.png)</p>
+<p>然后其他选项保持默认即可（注意下方是否选择了【<strong>Public</strong>】选项以免不能通过网址访问）</p>
+
+
+<h3 class="relative group">3. 3 生成本地SSH 
+    <div id="3-3-%E7%94%9F%E6%88%90%E6%9C%AC%E5%9C%B0ssh" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-3-%E7%94%9F%E6%88%90%E6%9C%AC%E5%9C%B0ssh" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>SSH是一种<strong>网络协议</strong>，让我们能够安全地登陆到Github上，有效防止远程管理过程中的信息泄露问题。其具体的实现过程如下：</p>
+<ul>
+<li>远程主机收到来自你电脑的登陆请求，将主机存储的SSH公钥与你电脑发送的<strong>公钥</strong>进行比对。</li>
+<li>若公钥一致，主机将用你电脑发送的公钥加密“质询”(Challenge)并将加密内容返回你的电脑。</li>
+<li>你的电脑用本地一并生成的<strong>私钥</strong>对”质询“进行解密并把解密内容发送给远程主机。</li>
+<li>若解密内容一致，则允许登陆。</li>
+</ul>
+<p>让我们我们先在本地生成<strong>SSH秘钥</strong>。在你博客文件夹下打开终端，在终端中输入：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;username&#34;</span>
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;useremail&#34;</span>
+</span></span></code></pre></div><p>其中<code>username</code>换成你Github的用户名，<code>useremail</code>换成你注册Github所用的邮箱 。可以用以下两条命令检查是否填写正确：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config user.name
+</span></span><span class="line"><span class="cl">git config user.email
+</span></span></code></pre></div><p>接下来创建SSH秘钥，输入以下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t rsa -C <span class="s2">&#34;useremail&#34;</span>
+</span></span></code></pre></div><p>一直回车，直到它告诉你已经生成了SSH密钥秘钥，打开它所给的文件夹：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/ssh1.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<p>其中，<code>id_rsa</code>是你这台电脑的私人秘钥，<code>id_rsa.pub</code>是公共秘钥，我们要用的就是<code>id_rsa.pub</code>。选择用记事本的形式打开<code>id_rsa.pub</code>，其中的内容就是我们要的公钥。</p>
+
+
+<h3 class="relative group">3. 4 Github创建SSH Key 
+    <div id="3-4-github%E5%88%9B%E5%BB%BAssh-key" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-4-github%E5%88%9B%E5%BB%BAssh-key" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>点击Github的头像，找到下方的【<strong>Settings</strong>】，在【<strong>Settings</strong>】中找到【<strong>SSH and GPG key</strong>】，也可以直接点击<a href="https://github.com/settings/keys" target="_blank">链接</a>，然后点击【<strong>New SSH key</strong>】</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/ssh2.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<p><code>Title</code>随便取，<code>Key type</code>保持默认<code>Authentication key</code>，然后在<code>Key</code>中填入你上面生成的公共秘钥<code>id_rsa.pub</code>中的内容：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/ssh3.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<p>输入完成之后点下【<strong>Add SSH key</strong>】。</p>
+<p>回到之前的终端，在终端中输入命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh -T git@github.com
+</span></span></code></pre></div><p>如出现如下的界面则创建SSH密钥成功：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/ssh4.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<blockquote>
+<p>最新产生的问题：如果你在校园网环境下可能会失败，因为部分校园网会屏蔽SSH端口（比如我们学校的校园网会时常抽风）</p>
+<p>解决方案：换成手机流量就可以了</p>
+</blockquote>
+
+
+<h3 class="relative group">3. 5 配置<code>_config.yml</code> 
+    <div id="3-5-%E9%85%8D%E7%BD%AE_configyml" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-5-%E9%85%8D%E7%BD%AE_configyml" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<blockquote>
+<p>2023.10.22 更新：由于博主校园网持续屏蔽SSH端口，故放弃SSH的方法，改用HTTPS进行链接。</p>
+</blockquote>
+<p>在你的博客文件夹主目录下的<code>_config.yml</code>是Hexo的配置文件，用记事本打开后可以根据注释按照你的情况对其进行修改。现在我们需要配置最下面的<code>deploy</code>选项，根据你的情况按照下面的格式进行填写：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">deploy:
+</span></span><span class="line"><span class="cl">  type: git
+</span></span><span class="line"><span class="cl">  repo: https://github.com/usergithubname/usergithubname.github.io.git
+</span></span><span class="line"><span class="cl">  branch: master
+</span></span></code></pre></div><p>其中<code>repo</code>选择Github仓库中的HTTPS中的链接，即：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/config1.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<p>至此，部署到Github上的准备工作已经完成。</p>
+
+
+<h3 class="relative group">3. 6 部署到Github 
+    <div id="3-6-%E9%83%A8%E7%BD%B2%E5%88%B0github" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-6-%E9%83%A8%E7%BD%B2%E5%88%B0github" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>在部署之前，你需要下载一个部署插件才能使用<code>hexo d</code>，在终端中输入命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install hexo-deployer-git --save
+</span></span></code></pre></div><p>等待完成后，输入命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl">hexo d
+</span></span></code></pre></div><p>当你看到如下的界面时，你的部署就大功告成！</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/config2.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<p>此时你的博客已经部署到Github的仓库中了，你可以在浏览器中输入<code>https://usergithubname.github.io/</code>来访问你的博客啦。这里<code>usergithubname</code>还是填你Github的用户名。</p>
+
+
+<h2 class="relative group">4. 设置个人域名 
+    <div id="4-%E8%AE%BE%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-%E8%AE%BE%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">4. 1 一点准备 
+    <div id="4-1-%E4%B8%80%E7%82%B9%E5%87%86%E5%A4%87" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-1-%E4%B8%80%E7%82%B9%E5%87%86%E5%A4%87" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>在部署中就会遇到一个问题，那就是如果关掉科学上网的工具，那网站就很难再访问了。但是如果我们想让没有科学上网工具的人也能浏览我们的博客应该怎么办呢？答案是<strong>设置个人域名</strong>。</p>
+<p>我们在浏览器中输入<code>https://usergithubname.github.io/</code>打开我们的博客的时候，其中经历了三个步骤：</p>
+<ul>
+<li>浏览器根据域名向DNS服务器发送请求</li>
+<li>DNS将域名解析到对应的IP地址</li>
+<li>根据Http请求将网络路由接到对应IP地址的服务器</li>
+</ul>
+<p>本质上我们访问网站其实是访问网站的<strong>IP地址</strong>，域名只是起到一个“别名”的作用，域名和IP地址是<strong>键值对</strong>的关系。不过其实IP地址是一直在变化的，所以域名还能提供一个相对固定的访问地址。你的<code>https://usergithubname.github.io/</code>其实是<code>github.io</code>的二级域名，由于Github的服务器在国外所以访问速度会慢很多（<del>本着网线接的越长访问速度越慢的原理</del>）。那我们的域名是怎样加快访问速度的呢？</p>
+<p>这里我们就要谈到<strong>CDN（内容分布网络）</strong>，它加快网络访问速度的原理其实很简单：由于我们的博客是静态资源，如果我们的博客在附近被访问过一次，那么本地的DNS服务器对应IP中就会有博客的缓存，当其他临近用户再次访问这个网站时，就能直接从最近的DNS服务器的缓存中访问了，大大提升了访问速度。</p>
+
+
+<h3 class="relative group">4. 2 域名申请 
+    <div id="4-2-%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-2-%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>免费域名申请有很多，比较流行的有 <em>eu.org</em>，详情可以参考其他的博客（它是一个二级域名再加上我的还没有审批下来所以有点介意啦）</p>
+<p>付费顶级域名在国内外的互联网大厂都能买到，我的域名 <em>.top</em> 在阿里云购买的，首年￥9，次年￥29，对于学生党还是很友好了。</p>
+<p>申请的具体过程就不赘述了，在申请的时候会有对应的提示，可以按照提示进行申请。</p>
+
+
+<h3 class="relative group">4. 3 域名设置 
+    <div id="4-3-%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-3-%E5%9F%9F%E5%90%8D%E8%AE%BE%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>首先打开终端，在终端中输入命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ping usergithubname.github.io
+</span></span></code></pre></div><p>在这个位置会显示你的博客IP地址：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/domain1.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<p>然后在你DNS解析商处打开你的域名管理，在DNS解析处添加两条记录：<strong>A</strong>和<strong>CNAME</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">内容</th>
+<th style="text-align:center">TTL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A</td>
+<td style="text-align:center">@</td>
+<td style="text-align:center">[你刚才ping出来的IP地址]</td>
+<td style="text-align:center">自动/10min</td>
+</tr>
+<tr>
+<td style="text-align:center">CNAME</td>
+<td style="text-align:center">www</td>
+<td style="text-align:center">usergithubname.github.io</td>
+<td style="text-align:center">自动/10min</td>
+</tr>
+</tbody>
+</table>
+<p>这样确保你的DNS解析商知道你的域名是指向哪里（由于DNS缓存的原因要过上一小段时间才能更新，所以添加完还不能立马访问哦）</p>
+<p>然后打开Github中你部署博客的仓库，在仓库上方找到<code>Settings</code>，打开后在左侧找到<code>Pages</code>，在里面找到<code>Custom domain</code>，并把你<strong>申请的域名</strong>添加到里面，记得勾选下面的<code>Enforce HTTPS </code>：</p>
+<p>
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/images/Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/domain2.png" alt="这时你会看到的界面" />
+      
+    </figure>
+</p>
+<p>然后在你的本地部署博客文件夹的主目录中找到<code>source</code>文件夹，在<code>source</code>文件夹下新建文本文档并命名为<code>CNAME.txt</code>，用记事本打开后输入<strong>你申请的域名</strong>，保存退出，然后删掉这个文件<code>CNAME.txt</code>的后缀<code>.txt</code>。</p>
+<p>最后重新部署下你的博客：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl">hexo g -d
+</span></span></code></pre></div><p>上面这个命令可以在生成之后立即部署，然后你就可以用自己的域名进行访问啦。</p>
+<blockquote>
+<p>建议每次部署之前都进行上面的操作。</p>
+</blockquote>
+
+
+<h2 class="relative group">5. 总结 
+    <div id="5-%E6%80%BB%E7%BB%93" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-%E6%80%BB%E7%BB%93" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>至此，一个可以通过互联网快速访问、可以任你创造的博客就创建好了。不过你要走的路还很长，包括网站的基础设置、网站主题的更换，评论系统、访问统计、SEO等等，这些都是为了让你的博客更好看、让别人能更好的浏览。说来我搭建博客也没多长时间，我要学的东西也有很多，之后我也会继续更新，努力把自己的博客建的更好。</p>
+<p>感谢你的阅读！</p>
+
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\\Hexo静态博客搭建（基础篇）.md"
+        var oid_likes = "likes_posts\\Hexo静态博客搭建（基础篇）.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/helloworld/helloworld/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Hello,world!</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-07-12 10:00:47 &#43;0800 CST">2024 July 12</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+    
+    
+    
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="返回顶部" title="返回顶部">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      Copyright © 2024 by WaTerBirD, All Rights Reserved <strong>·</strong> <a href="http://beian.miit.gov.cn/" target="_blank">蜀ICP备2024057307号-2</a>
+    </p>
+    
+
+    
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
