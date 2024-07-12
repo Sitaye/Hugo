@@ -11,12 +11,12 @@ title = "OrangeTree"
   # logo = "img/site/orange1.png"
   # secondaryLogo = "img/secondary-logo.png"
   # description = "My awesome website"
-  copyright = "Copyright © { year } by WaTerBirD, All Rights Reserved **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)"
+  copyright = "Copyright © { year } [Orange Tree](https://blog.watercuckoo.top/) by WaTerBirD. All rights reserved. **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)"
 
 [author]
   name = "WaTerBirD"
   image = "img/site/avatar.jpg"
-  headline = "我只是一个人类"
+  headline = "*我曾踏足山巅，也曾进入低谷，二者都让我受益良多.*"
   bio = "与你有关的一个人"
   links = [
     { email = "mailto:tylimispoa@gmail.com" },

@@ -10,7 +10,7 @@
   codeFences = true
   guessSyntax = true
   lineNos = false
-  style = "catppuccin-mocha"
+  # style = "catppuccin-mocha"
   # style = "onedark"
 
 [tableOfContents]

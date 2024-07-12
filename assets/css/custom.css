@@ -7,8 +7,6 @@
 
 pre code {
     font-family: 'Fira Code', monospace !important;
-    display: block;
-    width: 600px;    
 }
 
 /* Background */ .bg { color:#abb2bf!important;background-color:#282c34!important; }
@@ -97,4 +95,3 @@ pre code {
 /* GenericTraceback */ .chroma .gt {  }
 /* GenericUnderline */ .chroma .gl {  }
 /* TextWhitespace */ .chroma .w {  }
-.chroma .cl

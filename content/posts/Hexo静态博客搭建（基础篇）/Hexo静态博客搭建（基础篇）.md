@@ -1,9 +1,6 @@
 ---
-
 title: Hexo静态博客搭建（基础篇）
 date: 2023-10-19 19:34:28
-
-
 ---
 
 如果你某一天有了一个**搭建个人博客**的想法，但是因为<u>资金不足</u>、<u>技术栈太浅</u>等原因导致难以从零开始搭建自己的网站，那么用**Hexo**搭建一个静态博客就是一个不错的选择！本站是也是一个基于Hexo搭建的个人博客，将我的搭建过程分享出来，供感兴趣的朋友参考。
@@ -89,7 +86,7 @@ hexo s
 
 等待一会儿直到你看到类似如下的图片：
 
-![这是你看到的内容](/images/Hexo静态博客搭建（基础篇）/hexo初始化.png)
+![这是你看到的内容](/Hexo静态博客搭建（基础篇）/hexo初始化.png)
 
 然后在浏览器的搜索框中输入`localhost:4000`，就可以看到你部署的博客在网页中的样子了。如果你想退出预览，那么在刚才的终端页面中按下键盘上的 ***Ctrl+C*** 即可退出本地预览。
 
@@ -105,11 +102,11 @@ Hexo生成静态博客的实质是生成了**静态网页文件**，然后通过
 
 登陆到Github之后（如果登陆不上Github，建议检查是否缺少相应的条件），点击右上角的 + 号，再点击【**New repository**】：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/hexo repo1.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/hexo repo1.png)
 
 进去之后，将这个仓库的名字改为 `XX.github.io`，其中 `XX` 为你的用户名（记住，一定要为你的**用户名**不是昵称！）：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/hexo repo2.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/hexo repo2.png)
 
 然后其他选项保持默认即可（注意下方是否选择了【**Public**】选项以免不能通过网址访问）
 
@@ -144,7 +141,7 @@ ssh-keygen -t rsa -C "useremail"
 
 一直回车，直到它告诉你已经生成了SSH密钥秘钥，打开它所给的文件夹：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/ssh1.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/ssh1.png)
 
 其中，`id_rsa`是你这台电脑的私人秘钥，`id_rsa.pub`是公共秘钥，我们要用的就是`id_rsa.pub`。选择用记事本的形式打开`id_rsa.pub`，其中的内容就是我们要的公钥。
 
@@ -152,11 +149,11 @@ ssh-keygen -t rsa -C "useremail"
 
 点击Github的头像，找到下方的【**Settings**】，在【**Settings**】中找到【**SSH and GPG key**】，也可以直接点击[链接](https://github.com/settings/keys)，然后点击【**New SSH key**】
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/ssh2.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/ssh2.png)
 
 `Title`随便取，`Key type`保持默认`Authentication key`，然后在`Key`中填入你上面生成的公共秘钥`id_rsa.pub`中的内容：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/ssh3.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/ssh3.png)
 
 输入完成之后点下【**Add SSH key**】。
 
@@ -168,7 +165,7 @@ ssh -T git@github.com
 
 如出现如下的界面则创建SSH密钥成功：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/ssh4.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/ssh4.png)
 
 > 最新产生的问题：如果你在校园网环境下可能会失败，因为部分校园网会屏蔽SSH端口（比如我们学校的校园网会时常抽风）
 >
@@ -189,7 +186,7 @@ deploy:
 
 其中`repo`选择Github仓库中的HTTPS中的链接，即：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/config1.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/config1.png)
 
 至此，部署到Github上的准备工作已经完成。
 
@@ -211,7 +208,7 @@ hexo d
 
 当你看到如下的界面时，你的部署就大功告成！
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/config2.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/config2.png)
 
 此时你的博客已经部署到Github的仓库中了，你可以在浏览器中输入`https://usergithubname.github.io/`来访问你的博客啦。这里`usergithubname`还是填你Github的用户名。
 
@@ -249,7 +246,7 @@ ping usergithubname.github.io
 
 在这个位置会显示你的博客IP地址：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/domain1.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/domain1.png)
 
 然后在你DNS解析商处打开你的域名管理，在DNS解析处添加两条记录：**A**和**CNAME**
 
@@ -262,7 +259,7 @@ ping usergithubname.github.io
 
 然后打开Github中你部署博客的仓库，在仓库上方找到`Settings`，打开后在左侧找到`Pages`，在里面找到`Custom domain`，并把你**申请的域名**添加到里面，记得勾选下面的`Enforce HTTPS `：
 
-![这时你会看到的界面](/images/Hexo静态博客搭建（基础篇）/domain2.png)
+![这时你会看到的界面](/Hexo静态博客搭建（基础篇）/domain2.png)
 
 然后在你的本地部署博客文件夹的主目录中找到`source`文件夹，在`source`文件夹下新建文本文档并命名为`CNAME.txt`，用记事本打开后输入**你申请的域名**，保存退出，然后删掉这个文件`CNAME.txt`的后缀`.txt`。
 

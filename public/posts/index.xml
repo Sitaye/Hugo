@@ -6,18 +6,8 @@
     <description>Recent content in Posts on OrangeTree</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Copyright © 2024 by WaTerBirD, All Rights Reserved **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Fri, 12 Jul 2024 10:00:47 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello,world!</title>
-      <link>https://blog.watercuckoo.top/posts/helloworld/helloworld/</link>
-      <pubDate>Fri, 12 Jul 2024 10:00:47 +0800</pubDate>
-      
-      <guid>https://blog.watercuckoo.top/posts/helloworld/helloworld/</guid>
-      <description>#include&amp;lt;bits/stdc++.h&amp;gt; using i64 = long long; void solve() { int n, m, k; std::cin &amp;gt;&amp;gt; n &amp;gt;&amp;gt; m &amp;gt;&amp;gt; k; std::string s; std::cin &amp;gt;&amp;gt; s; int now = -1, aft = 0; bool inside = false; while (aft &amp;lt; n) { if (s[aft] == &amp;#39;L&amp;#39;) { now = aft; inside = false; } else if (s[aft] == &amp;#39;C&amp;#39;) { if (aft - now == m) { if (!</description>
-      
-    </item>
-    
+    <copyright>Copyright © 2024 [Orange Tree](https://blog.watercuckoo.top/) by WaTerBirD. All rights reserved. **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)</copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 15:33:12 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hexo静态博客搭建（基础篇）</title>
       <link>https://blog.watercuckoo.top/posts/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/</link>
