@@ -9,9 +9,9 @@
   noClasses = false
   codeFences = true
   guessSyntax = true
-  lineNos = true
-  # style = "catppuccin-mocha"
-  style = "onedark"
+  lineNos = false
+  style = "catppuccin-mocha"
+  # style = "onedark"
 
 [tableOfContents]
   startLevel = 2

@@ -8,11 +8,66 @@ draft = true
 ```cpp
 #include<bits/stdc++.h>
 using i64 = long long;
+void solve()
+{
+    int n, m, k;
+    std::cin >> n >> m >> k;
+
+    std::string s;
+    std::cin >> s;
+
+    int now = -1, aft = 0;
+    bool inside = false;
+
+    while (aft < n) {
+        if (s[aft] == 'L') {
+            now = aft;
+            inside = false;
+        }
+        else if (s[aft] == 'C') {
+            if (aft - now == m) {
+                if (!inside) {
+                    now = aft;
+                    inside = true;
+                }
+            }
+            if (inside) {
+                std::cout << "NO\n";
+                return;
+            }
+        }
+        else {
+            if (inside && k - 1 < 0) {
+                std::cout << "NO\n";
+                return;
+            }
+            if (aft - now == m) {
+                if (!inside) {
+                    now = aft;
+                    inside = true;
+                }
+            }
+        }
+        if (inside) {
+            k--;
+            if (k < 0) {
+                std::cout << "NO\n";
+                return;
+            }
+        }
+        aft ++;
+    }
+    std::cout << "YES\n";
+}
 int main()
 {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
-    std::cout << "Hello, world!";
+    int t;
+    std::cin >> t;
+    while (t--) {
+        solve();
+    }
     return 0;
 }
 ```

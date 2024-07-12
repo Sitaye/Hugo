@@ -25,6 +25,8 @@ highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = true
 
+pygmentsUseClasses = true
+
 [header]
   layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
@@ -48,8 +50,8 @@ smartTOCHideUnfocusedChildren = true
 
 [article]
   showDate = true
-  showViews = true
-  showLikes = true
+  showViews = false
+  showLikes = false
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = false
@@ -74,7 +76,7 @@ smartTOCHideUnfocusedChildren = true
   showTaxonomies = false
   showAuthorsBadges = false
   showWordCount = true
-  showComments = true
+  showComments = false
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
   showZenMode = false
 
@@ -120,13 +122,13 @@ smartTOCHideUnfocusedChildren = true
   cardViewScreenWidth = false
 
 [firebase]
-  apiKey = "AIzaSyCPDEhbYa-XKdySdQ97LI5FzBWSBcrbTYM"
-  authDomain = "hugo-be2d3.firebaseapp.com"
-  projectId = "hugo-be2d3"
-  storageBucket = "hugo-be2d3.appspot.com"
-  messagingSenderId = "94891274546"
-  appId = "1:94891274546:web:5b51978f253777b663672b"
-  measurementId = "G-H26VJ2H6V1"
+  # apiKey = "AIzaSyCPDEhbYa-XKdySdQ97LI5FzBWSBcrbTYM"
+  # authDomain = "hugo-be2d3.firebaseapp.com"
+  # projectId = "hugo-be2d3"
+  # storageBucket = "hugo-be2d3.appspot.com"
+  # messagingSenderId = "94891274546"
+  # appId = "1:94891274546:web:5b51978f253777b663672b"
+  # measurementId = "G-H26VJ2H6V1"
 
 [fathomAnalytics]
   # site = "ABC12345"
