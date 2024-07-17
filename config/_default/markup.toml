@@ -6,13 +6,14 @@
   unsafe = true
 
 [highlight]
-  noClasses = false
+  noClasses = true
   codeFences = true
   guessSyntax = true
   lineNos = false
-  # style = "catppuccin-mocha"
-  # style = "onedark"
+  style = "catppuccin-mocha"
 
 [tableOfContents]
   startLevel = 2
   endLevel = 4
+
+  

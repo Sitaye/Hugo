@@ -8,18 +8,18 @@ title = "OrangeTree"
   isoCode = "zh-cn"
   rtl = false
   dateFormat = "2006 January 2"
-  # logo = "img/site/orange1.png"
-  # secondaryLogo = "img/secondary-logo.png"
+  # logo = "img/site/favicon-32x32.png"
+  # secondaryLogo = "img/secondary-logo.png" # logo situated at /asserts/img
   # description = "My awesome website"
   copyright = "Copyright © { year } [Orange Tree](https://blog.watercuckoo.top/) by WaTerBirD. All rights reserved. **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)"
 
 [author]
   name = "WaTerBirD"
   image = "img/site/avatar.jpg"
-  headline = "*我曾踏足山巅，也曾进入低谷，二者都让我受益良多.*"
-  bio = "与你有关的一个人"
+  headline = "*我曾踏足山巅，也曾进入低谷，二者都让我受益良多。*"
+  bio = "愿原力与你同在。"
   links = [
-    { email = "mailto:tylimispoa@gmail.com" },
+    { email = "mailto:linpenghan@qq.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
