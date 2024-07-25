@@ -2,6 +2,7 @@ languageCode = "zh-cn"
 languageName = "简体中文"
 weight = 1
 title = "OrangeTree"
+contentDir = "content/zh-cn"
 
 [params]
   displayName = "简体中文"
@@ -20,6 +21,7 @@ title = "OrangeTree"
   bio = "愿原力与你同在。"
   links = [
     { email = "mailto:linpenghan@qq.com" },
+    { github = "https://github.com/sitaye/" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
@@ -32,7 +34,6 @@ title = "OrangeTree"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-    { github = "https://github.com/sitaye/" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },

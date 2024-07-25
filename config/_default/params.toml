@@ -77,25 +77,26 @@ pygmentsUseClasses = true
   showAuthorsBadges = false
   showWordCount = true
   showComments = true
-  # sharingLinks = [ "linkedin", "twitter", "bluesky", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  sharingLinks = [ "twitter", "reddit", "facebook", "email", "telegram"]
   showZenMode = true
+  
 
 [list]
   showHero = false  
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = true
+  showBreadcrumbs = false
   showSummary = true
   # showViews = false
   # showLikes = false
-  showTableOfContents = false
+  showTableOfContents = true
   showCards = false
-  orderByWeight = true
+  orderByWeight = false
   groupByYear = true
   cardView = false
   cardViewScreenWidth = false
-  constrainItemsWidth = false
+  constrainItemsWidth = true
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]

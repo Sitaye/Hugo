@@ -16,33 +16,6 @@
  weight = 10
 
 [[main]]
- name = "父级"
- weight = 20
-
-[[main]]
- name = "模板子目录 1"
- parent = "父级"
- pageRef = "posts"
- weight = 20
-
-[[main]]
- name = "模板子目录 2"
- parent = "父级"
- pageRef = "posts"
- weight = 20
-
-[[subnavigation]]
- name = "一个有趣的话题"
- pageRef = "tags/interesting-topic"
- weight = 10
-
-[[subnavigation]]
- name = "我的优秀文集"
- pre = "github"
- pageRef = "categories/awesome"
- weight = 20
-
-[[main]]
  name = "分类"
  pageRef = "categories"
  weight = 20
@@ -51,6 +24,38 @@
  name = "标签"
  pageRef = "tags"
  weight = 30
+
+[[main]]
+  pre = "github"
+  url = "https://github.com/sitaye"
+  weight = 40
+
+# [[main]]
+#  name = "父级"
+#  weight = 20
+
+# [[main]]
+#  name = "模板子目录 1"
+#  parent = "父级"
+#  pageRef = "posts"
+#  weight = 20
+
+# [[main]]
+#  name = "模板子目录 2"
+#  parent = "父级"
+#  pageRef = "posts"
+#  weight = 20
+
+# [[subnavigation]]
+#  name = "一个有趣的话题"
+#  pageRef = "tags/interesting-topic"
+#  weight = 10
+
+# [[subnavigation]]
+#  name = "我的优秀文集"
+#  pre = "github"
+#  pageRef = "categories/awesome"
+#  weight = 20
 
 
 # -- Footer Menu --

@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OrangeTree</title>
+    <title>Zh-Cns on OrangeTree</title>
     <link>http://localhost:1313/zh-cn/</link>
-    <description>Recent content on OrangeTree</description>
+    <description>Recent content in Zh-Cns on OrangeTree</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>© 2024 WaTerBirD</copyright>
-    <atom:link href="http://localhost:1313/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2024 [Orange Tree](https://blog.watercuckoo.top/) by WaTerBirD. All rights reserved. **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)</copyright>
+    <lastBuildDate>Fri, 12 Jul 2024 15:33:12 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello,world!</title>
+      <link>http://localhost:1313/zh-cn/posts/helloworld/helloworld/</link>
+      <pubDate>Fri, 12 Jul 2024 15:33:12 +0800</pubDate>
+      
+      <guid>http://localhost:1313/zh-cn/posts/helloworld/helloworld/</guid>
+      <description>#include&amp;lt;bits/stdc++.h&amp;gt; using i64 = long long; int main() { std::cout &amp;lt;&amp;lt; &amp;#34;Hello, world!</description>
+      
+    </item>
+    
+    <item>
+      <title>Hexo静态博客搭建（基础篇）</title>
+      <link>http://localhost:1313/zh-cn/posts/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/</link>
+      <pubDate>Thu, 19 Oct 2023 19:34:28 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-cn/posts/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E7%AF%87/</guid>
+      <description>如果你某一天有了一个搭建个人博客的想法，但是因为资金不足、技术栈太浅等原因导致难以从零开始搭建自己的网站，那么用Hexo搭建一个静态博客就是一个不错的选择！本站是也是一个基于Hexo搭建的个人博客，将我的搭建过程分享出来，供感兴趣的朋友参考。</description>
+      
+    </item>
+    
   </channel>
 </rss>
