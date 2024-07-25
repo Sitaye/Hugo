@@ -15,7 +15,6 @@ enableCodeCopy = false
 # mainSections = ["section1", "section2"]
 # robots = ""
 
-disableImageZoom = false
 disableImageOptimization = false
 disableTextInHeader = false
 
@@ -40,7 +39,7 @@ pygmentsUseClasses = true
 
 [homepage]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "/img/site/Loky_Summer_4k.jpg" # used in: hero, and card
+  # homepageImage = "/img/site/Loky_Summer_4k.jpg" # used in: hero, and card
   showRecent = false
   showRecentItems = 5
   showMoreLink = true
@@ -53,7 +52,7 @@ pygmentsUseClasses = true
   showDate = true
   # showViews = false
   # showLikes = false
-  showDateOnlyInArticle = true
+  showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = false
   # showAuthorBottom = false
@@ -66,13 +65,13 @@ pygmentsUseClasses = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
   editAppendPath = true
-  seriesOpened = true
+  seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showRelatedContent = false
+  # showRelatedContent = false
   # relatedContentLimit = 3
   showTaxonomies = false
   showAuthorsBadges = false
@@ -88,9 +87,9 @@ pygmentsUseClasses = true
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
   showSummary = true
-  showViews = false
-  showLikes = false
-  showTableOfContents = true
+  # showViews = false
+  # showLikes = false
+  showTableOfContents = false
   showCards = false
   orderByWeight = true
   groupByYear = true
@@ -99,7 +98,7 @@ pygmentsUseClasses = true
   constrainItemsWidth = false
 
 [sitemap]
-  # excludedKinds = ["taxonomy", "term"]
+  excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
   showTermCount = true

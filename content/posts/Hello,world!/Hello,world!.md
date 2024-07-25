@@ -26,12 +26,10 @@ fn main() {
 ```
 
 {{< katex >}}
-{{< typeit 
-  speed=100
-  breakLines=false
-  loop=true
 
->}}
+\\(f(x)=\int_{-\infty}^\infty\widehat f\xi\,e^{2\pi i\xi x}\,d\xi\\)
+
+{{< typeit speed=100 breakLines=false loop=true >}}
 Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
 {{< /typeit >}}
