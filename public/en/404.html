@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.45a2422898f53ed9834c18786b3554a2eafd4983b105c2717a6db7d55e376b0bce0dbb576df3352d03cef9fe701fe1b4e6a78731574887c10036a6e8395dc3fa.css"
-    integrity="sha512-RaJCKJj1PtmDTBh4azVUour9SYOxBcJxem231V43awvODbtXbfM1LQPO&#43;f5wH&#43;G05qeHMVdIh8EANqboOV3D&#43;g==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.a5a98ec3d6ae0a8e56c18d9349ca001524f28da4739b85631a9d74be7ae12898467b5ff1f539ff6863d245cfc51bce132aee05eae95c81fb9bb10137e4c6be58.css"
+    integrity="sha512-pamOw9auCo5WwY2TScoAFSTyjaRzm4VjGp10vnrhKJhGe1/x9Tn/aGPSRc/FG84TKu4F6ulcgfubsQE35Ma&#43;WA==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -131,7 +131,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -173,6 +177,17 @@
     
     <p class="text-base font-medium" title="">
         Tags
+    </p>
+</a>
+
+
+
+            
+            
+  <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        About
     </p>
 </a>
 
@@ -451,6 +466,21 @@
 
                     
   <li class="mt-1">
+    <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            About
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
     <a href="https://github.com/sitaye"  target="_blank"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <div >
@@ -498,6 +528,16 @@
 </script>
 
 
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
   
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
@@ -519,7 +559,7 @@
     
     
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      Copyright © 2024 <a href="https://blog.watercuckoo.top/" target="_blank">Orange Tree</a> by WaTerBirD. All rights reserved.
+      Copyright © 2024 <a href="https://blog.watercuckoo.top/" target="_blank">Orange Tree</a>
     </p>
     
 

@@ -26,9 +26,14 @@
  weight = 30
 
 [[main]]
+ name = "关于"
+ pageRef = "about"
+ weight = 40
+
+[[main]]
   pre = "github"
   url = "https://github.com/sitaye"
-  weight = 40
+  weight = 50
 
 # [[main]]
 #  name = "父级"

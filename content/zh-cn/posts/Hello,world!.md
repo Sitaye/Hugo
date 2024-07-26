@@ -1,7 +1,9 @@
 +++
 title = 'Hello,world!'
 date = 2024-07-12T15:33:12+08:00
-draft = true
+draft = false
+series = ["Hello"]
+series_order = 1
 
 +++
 
@@ -33,6 +35,6 @@ fn main() {
 Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
 {{< /typeit >}}
-好的非常好，这是一篇关于代码块的长度的文章，所有的代码都会和我的文章对齐
+好的非常好，这是一篇关于代码块的长度的文章，所有的代码都会和我的文章对齐啦啦
 
 {{< github repo="Sitaye/Hugo" >}}

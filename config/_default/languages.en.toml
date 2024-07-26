@@ -12,12 +12,12 @@ contentDir = "content/en"
   # logo = "img/site/favicon-32x32.png"
   # secondaryLogo = "img/secondary-logo.png" # logo situated at /asserts/img
   # description = "My awesome website"
-  copyright = "Copyright © { year } [Orange Tree](https://blog.watercuckoo.top/) by WaTerBirD. All rights reserved."
+  copyright = "Copyright © { year } [Orange Tree](https://blog.watercuckoo.top/)"
 
 [author]
   name = "WaTerBirD"
   image = "img/site/avatar.jpg"
-  headline = "*I've been to the top of the mountain, <br>and the bottom of the gutter. <br>There's much to learn from both.*"
+  headline = "*November Ocean, November Rain*"
   bio = "May the force be with you."
   links = [
     { email = "mailto:tylimispoa@gmail.com" },

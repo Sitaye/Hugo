@@ -10,11 +10,9 @@ pre code {
 }
 
 .article-content a:hover {
-    color: #60A5FA!important;
     text-decoration: underline!important;
 }
 
 footer a:hover {
-    color: #60A5FA!important;
     text-decoration: underline!important;
 }
