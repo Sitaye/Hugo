@@ -109,6 +109,11 @@ function hideSearch() {
 }
 
 function fetchJSON(path, callback) {
+  if (path.startsWith("http://")) {
+    path = path.replace("http://", "https://");
+  } else if (!path.startsWith("https://")) {
+    path = "https://" + window.location.hostname + "/" + path;
+  }
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function () {
     if (httpRequest.readyState === 4) {
@@ -125,6 +130,9 @@ function fetchJSON(path, callback) {
 function buildIndex() {
   var baseURL = wrapper.getAttribute("data-url");
   baseURL = baseURL.replace(/\/?$/, '/');
+  if (!baseURL.startsWith("https://")) {
+    baseURL = "https://" + window.location.hostname + "/";
+  }
   fetchJSON(baseURL + "index.json", function (data) {
     var options = {
       shouldSort: true,
