@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on OrangeTree</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on OrangeTree</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2024 [Orange Tree](https://blog.watercuckoo.top/) **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)</copyright>
+    <lastBuildDate>Fri, 26 Jul 2024 19:15:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

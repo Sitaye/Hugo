@@ -1,9 +1,11 @@
 +++
 title = 'Test_shortcode'
 date = 2024-07-26T11:08:50+08:00
-draft = false
+draft = true
 series = ["Hello"]
 series_order = 2
+tags = ["test", "support"]
+categories = ["hello"]
 
 +++
 

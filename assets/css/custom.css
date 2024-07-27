@@ -16,3 +16,15 @@ pre code {
 footer a:hover {
     text-decoration: underline!important;
 }
+
+
+/* @font-face {
+    font-family: 'SmileySans-Oblique';
+    src: url('/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.profile-text {
+    font-family: 'SmileySans-Oblique';
+    letter-spacing: 0.1em;
+} */

@@ -1,7 +1,7 @@
 +++
 title = 'Hello,world!'
 date = 2024-07-12T15:33:12+08:00
-draft = false
+draft = true
 series = ["Hello"]
 series_order = 1
 
