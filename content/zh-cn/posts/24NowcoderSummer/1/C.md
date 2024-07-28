@@ -14,6 +14,8 @@ tags = ["前缀和", "模运算"]
 
 ## 1. 题目
 
+{{< toggle "English" >}}
+
 Given an array which is initially empty, you need to perform \\(q\\) operations:
 
 - Given two non-negative integers \\(t\\) and \\(v\\), take out the element from the end of the array for \\(t\\) times and then append \\(v\\) to the end of the array. It is guaranteed that \\(t\\) does not exceed the length of the array before this operation.
@@ -31,6 +33,8 @@ Each of the following \\(q\\) lines contains two non-negative integers \\(t\\) a
 ***<u>Output</u>***
 
 Output \\(q\\) lines, each of which contains an integer, denoting the answer.
+
+{{</ toggle >}}
 
 ## 2. 思路
 
@@ -60,6 +64,8 @@ $$
 
 ## 3. 代码
 
+{{< toggle "C++" >}}
+
 ```cpp
 constexpr int mod = 1000000007;
 void solve()
@@ -72,7 +78,7 @@ void solve()
         i64 t, v;
         std::cin >> t >> v;
         while (t--) {
-            sum += mod; // 防止减的时候溢出
+            sum += mod; // 防止减的时候成为负数
             sum -= (l.top() * l.size()) % mod;
             sum %= mod;
             l.pop();
@@ -85,9 +91,11 @@ void solve()
 }
 ```
 
+{{</ toggle >}}
+
 ## 4. 总结
 
 这个题主要对**模运算**进行了考察，有几个点需要特别注意一下：
 
 - 模运算中：\\((A\pm\* B)\mod P=((A\mod P)\pm (B\mod P))\mod P\\)
-- 由于第一条特性，在程序的加减的过程中会一直每一项元素取模。所以在计算过程中迭代器很容易发生**溢出**，所以在给迭代器取模时要<u>先加上一个模数</u>防止溢出。
+- 由于第一条特性，在程序的减法的过程中会对每一项元素取模后再取模，所以在计算过程中迭代器很容易在做减法的时候**变为负数**，此时需要在对迭代器取模前<u>先加上一个模数</u>防止溢出。

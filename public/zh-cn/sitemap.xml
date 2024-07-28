@@ -3,14 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://blog.watercuckoo.top/posts/24nowcodersummer/1/c/</loc>
-    <lastmod>2024-07-26T21:35:59+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://blog.watercuckoo.top/</loc>
-    <lastmod>2024-07-26T21:35:59+08:00</lastmod>
+    <lastmod>2024-07-27T12:12:50+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -26,7 +20,7 @@
   </url>
   <url>
     <loc>https://blog.watercuckoo.top/posts/</loc>
-    <lastmod>2024-07-26T21:35:59+08:00</lastmod>
+    <lastmod>2024-07-27T12:12:50+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -41,8 +35,14 @@
     />
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/24nowcodersummer/1/b/</loc>
-    <lastmod>2024-07-26T20:24:57+08:00</lastmod>
+    <loc>https://blog.watercuckoo.top/posts/24nowcodersummer/1/h/</loc>
+    <lastmod>2024-07-27T12:12:36+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.watercuckoo.top/posts/24nowcodersummer/1/c/</loc>
+    <lastmod>2024-07-26T21:35:59+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -57,5 +57,15 @@
     <lastmod>2024-07-26T10:47:41+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://blog.watercuckoo.top/en/about/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-cn"
+      href="https://blog.watercuckoo.top/about/"
+    />
   </url>
 </urlset>
