@@ -45,15 +45,5 @@
     <lastmod>2024-07-26T10:44:58+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-cn"
-      href="https://blog.watercuckoo.top/posts/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://blog.watercuckoo.top/en/posts/"
-    />
   </url>
 </urlset>

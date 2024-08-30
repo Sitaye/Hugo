@@ -12,12 +12,12 @@ contentDir = "content/zh-cn"
   # logo = "img/site/favicon-32x32.png"
   # secondaryLogo = "img/secondary-logo.png" # logo situated at /asserts/img
   # description = "My awesome website"
-  copyright = "Copyright © { year } [Orange Tree](https://blog.watercuckoo.top/) **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)"
+  copyright = "Copyright © { year } [Orange Tree](https://blog.watercuckoo.top/)"
 
-[author]
+[params.author]
   name = "WaTerBirD"
   image = "img/site/avatar.jpg"
-  headline = "*坐岸观海，听十一月雨*"
+  headline = "*坐岸观海，听十一月雨。*"
   bio = "愿原力与你同在。"
   links = [
     { email = "mailto:linpenghan@qq.com" },

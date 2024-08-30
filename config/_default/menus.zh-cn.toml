@@ -12,13 +12,39 @@
 
 [[main]]
  name = "博客"
- pageRef = "posts"
+#  pageRef = "posts"
  weight = 10
 
-[[main]]
- name = "分类"
- pageRef = "categories"
- weight = 20
+ [[main]]
+  name = "比 赛"
+  parent = "博客"
+  pageRef = "contest"
+  weight = 10
+
+ [[main]]
+  name = "数 学"
+  parent = "博客"
+  pageRef = "math"
+  weight = 20
+
+ 
+ [[main]]
+  name = "算 法"
+  parent = "博客"
+  pageRef = "algorithm"
+  weight = 30
+
+  [[main]]
+   name = "数据结构"
+   parent = "博客"
+   pageRef = "data_structure"
+   weight = 40
+
+
+# [[main]]
+#  name = "分类"
+#  pageRef = "categories"
+#  weight = 20
 
 [[main]]
  name = "标签"

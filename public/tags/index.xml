@@ -6,14 +6,54 @@
     <description>Recent content in Tags on OrangeTree</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Copyright © 2024 [Orange Tree](https://blog.watercuckoo.top/) **·** [蜀ICP备2024057307号-2](http://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Sat, 27 Jul 2024 12:12:36 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2024 [Orange Tree](https://blog.watercuckoo.top/)</copyright>
+    <lastBuildDate>Wed, 31 Jul 2024 19:14:56 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>动态规划</title>
+      <link>https://blog.watercuckoo.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</link>
+      <pubDate>Wed, 31 Jul 2024 19:14:56 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>前缀和</title>
+      <link>https://blog.watercuckoo.top/tags/%E5%89%8D%E7%BC%80%E5%92%8C/</link>
+      <pubDate>Wed, 31 Jul 2024 19:14:54 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/tags/%E5%89%8D%E7%BC%80%E5%92%8C/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>签到题</title>
       <link>https://blog.watercuckoo.top/tags/%E7%AD%BE%E5%88%B0%E9%A2%98/</link>
-      <pubDate>Sat, 27 Jul 2024 12:12:36 +0800</pubDate>
+      <pubDate>Wed, 31 Jul 2024 19:14:38 +0800</pubDate>
       
       <guid>https://blog.watercuckoo.top/tags/%E7%AD%BE%E5%88%B0%E9%A2%98/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>三元环计数</title>
+      <link>https://blog.watercuckoo.top/tags/%E4%B8%89%E5%85%83%E7%8E%AF%E8%AE%A1%E6%95%B0/</link>
+      <pubDate>Wed, 31 Jul 2024 19:14:31 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/tags/%E4%B8%89%E5%85%83%E7%8E%AF%E8%AE%A1%E6%95%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>最小生成树</title>
+      <link>https://blog.watercuckoo.top/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</link>
+      <pubDate>Wed, 31 Jul 2024 19:14:31 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/</guid>
       <description></description>
       
     </item>
@@ -29,21 +69,11 @@
     </item>
     
     <item>
-      <title>前缀和</title>
-      <link>https://blog.watercuckoo.top/tags/%E5%89%8D%E7%BC%80%E5%92%8C/</link>
-      <pubDate>Fri, 26 Jul 2024 21:35:59 +0800</pubDate>
-      
-      <guid>https://blog.watercuckoo.top/tags/%E5%89%8D%E7%BC%80%E5%92%8C/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>斯特林数</title>
-      <link>https://blog.watercuckoo.top/tags/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/</link>
+      <title>第二类斯特林数</title>
+      <link>https://blog.watercuckoo.top/tags/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/</link>
       <pubDate>Fri, 26 Jul 2024 20:24:57 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/tags/%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/</guid>
+      <guid>https://blog.watercuckoo.top/tags/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0/</guid>
       <description></description>
       
     </item>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="light"
   data-auto-appearance="true"><head>
-	<meta name="generator" content="Hugo 0.129.0">
+	<meta name="generator" content="Hugo 0.133.1">
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh-cn" />
@@ -33,8 +33,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.a5a98ec3d6ae0a8e56c18d9349ca001524f28da4739b85631a9d74be7ae12898467b5ff1f539ff6863d245cfc51bce132aee05eae95c81fb9bb10137e4c6be58.css"
-    integrity="sha512-pamOw9auCo5WwY2TScoAFSTyjaRzm4VjGp10vnrhKJhGe1/x9Tn/aGPSRc/FG84TKu4F6ulcgfubsQE35Ma&#43;WA==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.af591d99ee0148a5f3dce32525ca764fecb8910996ff46b0340ffd981b86c98e86666a06f0c5971d283eb89d93e1a246c45aac72aa6e7e08d8b5e1aa1694fe76.css"
+    integrity="sha512-r1kdme4BSKXz3OMlJcp2T&#43;y4kQmW/0awNA/9mBuGyY6GZmoG8MWXHSg&#43;uJ2T4aJGxFqscqpufgjYteGqFpT&#43;dg==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -52,7 +52,8 @@
     integrity="sha512-QLAHUzbbwfT8TL34kld63eNgfqhR8RJR1QK68q24tP/adl&#43;Ezf4CKDetPgHQ4L0j/zLto3Rh5rt97OGUljCNRA==" data-copy="" data-copied=""></script>
   
   
-  <script src="/js/zoom.min.js"></script>
+  
+  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
   
   
   
@@ -111,7 +112,8 @@
   
   
 
-<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+
 
 
 
@@ -135,6 +137,7 @@
 
   
   
+
 
 
   
@@ -171,24 +174,71 @@
 
             
             
-            
-  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
     
-    <p class="text-base font-medium" title="">
-        博客
-    </p>
-</a>
+    <a  class="text-base font-medium text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" title="">
+      博客
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
 
 
-
-            
-            
-  <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        分类
-    </p>
-</a>
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/contest/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" style="display: flex; justify-content: center; align-items: center;">
+          
+          <p class="text-sm font-sm" title="">
+            比 赛
+          </p>
+        </a>
+        
+        <a href="/math/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" style="display: flex; justify-content: center; align-items: center;">
+          
+          <p class="text-sm font-sm" title="">
+            数 学
+          </p>
+        </a>
+        
+        <a href="/algorithm/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" style="display: flex; justify-content: center; align-items: center;">
+          
+          <p class="text-sm font-sm" title="">
+            算 法
+          </p>
+        </a>
+        
+        <a href="/data_structure/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" style="display: flex; justify-content: center; align-items: center;">
+          
+          <p class="text-sm font-sm" title="">
+            数据结构
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -440,30 +490,74 @@
 
                     
 
-                    
+                     
   <li class="mt-1">
-    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
             博客
         </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
     </a>
 </li>
 
-
-
-
-                    
-
-                    
-  <li class="mt-1">
-    <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+<li class="mt-1">
+    <a href="/contest/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
-            分类
+        <p class="text-sm font-small" title="">
+            比 赛
         </p>
     </a>
 </li>
+
+<li class="mt-1">
+    <a href="/math/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-sm font-small" title="">
+            数 学
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/algorithm/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-sm font-small" title="">
+            算 法
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/data_structure/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-sm font-small" title="">
+            数据结构
+        </p>
+    </a>
+</li>
+
+<li class="mb-2"></li>
 
 
 
@@ -580,7 +674,7 @@
           
         
         <img class="mb-2 rounded-full h-36 w-36" width="144" height="144" alt="WaTerBirD"
-          src="/img/site/avatar_hu480417dab39127031d0138c996dc572f_140528_288x288_fill_q75_box_center.jpg" />
+          src="/img/site/avatar_hu15359206315378057434.jpg" />
       
     
     <h1 class="mb-2 text-4xl font-extrabold">
@@ -588,7 +682,7 @@
     </h1>
     
     <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
-      <em>坐岸观海，听十一月雨</em>
+      <em>坐岸观海，听十一月雨。</em>
     </h2>
     
     <div class="mt-1 text-2xl">
@@ -656,7 +750,7 @@
     
     
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      Copyright © 2024 <a href="https://blog.watercuckoo.top/" target="_blank">Orange Tree</a> <strong>·</strong> <a href="http://beian.miit.gov.cn/" target="_blank">蜀ICP备2024057307号-2</a>
+      Copyright © 2024 <a href="https://blog.watercuckoo.top/" target="_blank">Orange Tree</a>
     </p>
     
 

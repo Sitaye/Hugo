@@ -14,10 +14,10 @@ contentDir = "content/en"
   # description = "My awesome website"
   copyright = "Copyright © { year } [Orange Tree](https://blog.watercuckoo.top/)"
 
-[author]
+[params.author]
   name = "WaTerBirD"
   image = "img/site/avatar.jpg"
-  headline = "*November Ocean, November Rain*"
+  headline = "*November Ocean, November Rain.*"
   bio = "May the force be with you."
   links = [
     { email = "mailto:tylimispoa@gmail.com" },

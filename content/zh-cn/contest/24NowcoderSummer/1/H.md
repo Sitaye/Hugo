@@ -3,7 +3,7 @@ title = '【2024牛客暑期多校训练营1】H'
 date = 2024-07-27T12:12:36+08:00
 draft = false
 series = ["2024牛客暑期多校训练营1"]
-series_order = 8
+series_order = 5
 showSummary = false
 tags = ["签到题"]
 
@@ -42,6 +42,14 @@ It is guaranteed that:
 ***<u>Output</u>***
 
 Output one line containing one integer, denoting the best possible ranking of `lzr010506`'s team.
+
+{{< /toggle >}}
+
+<br>
+
+{{< toggle "简体中文（大意）" >}}
+
+一些队伍同时参加了两场比赛，但只能选择一场比赛积分，求 `lzr010506` 能获得的最高名次。
 
 {{< /toggle >}}
 
