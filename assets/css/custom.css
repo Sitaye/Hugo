@@ -17,6 +17,36 @@ footer a:hover {
     text-decoration: underline!important;
 }
 
+.new-from-primary-500 {
+    --tw-gradient-from:rgba(var(--color-primary-200), 1) var(--tw-gradient-from-position);
+    --tw-gradient-to:rgba(var(--color-primary-200), 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)
+}
+
+.new-to-secondary-600 {
+    --tw-gradient-to:rgba(var(--color-secondary-300), 1) var(--tw-gradient-to-position)
+}
+
+.dark\:new-from-primary-600:is(.dark *) {
+    --tw-gradient-from:rgba(var(--color-primary-300), 1) var(--tw-gradient-from-position);
+    --tw-gradient-to:rgba(var(--color-primary-300), 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)
+}
+
+.dark\:new-to-secondary-800:is(.dark *) {
+    --tw-gradient-to:rgba(var(--color-secondary-500), 1) var(--tw-gradient-to-position)
+}
+
+.new-text-neutral-200 {
+    --tw-text-opacity:1;
+    color:rgba(var(--color-neutral-100), var(--tw-text-opacity))
+}
+
+.new-text-neutral-300 {
+    --tw-text-opacity:1;
+    color:rgba(var(--color-neutral-200), var(--tw-text-opacity))
+}
+
 /* @font-face {
     font-family: 'SmileySans-Oblique';
     src: url('/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');

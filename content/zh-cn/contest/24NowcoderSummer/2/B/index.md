@@ -3,7 +3,7 @@ title = '【2024牛客暑期多校训练营2】B'
 date = 2024-07-31T19:14:31+08:00
 draft = false
 series = ["2024牛客暑期多校训练营2"]
-series_order = 2
+series_order = 1
 showSummary = false
 tags = ["最小生成树", "三元环计数"]
 

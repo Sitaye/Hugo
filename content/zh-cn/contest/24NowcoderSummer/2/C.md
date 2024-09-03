@@ -3,7 +3,7 @@ title = '【2024牛客暑期多校训练营2】C'
 date = 2024-07-31T19:14:33+08:00
 draft = false
 series = ["2024牛客暑期多校训练营2"]
-series_order = 3
+series_order = 2
 showSummary = false
 tags = ["动态规划"]
 
