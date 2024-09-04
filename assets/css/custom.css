@@ -51,14 +51,14 @@ footer a:hover {
     min-height:120px
 }
 
-.search-bg-color {
-    background-color: var(--color-neutral);
+.focus\:bg-primary-300:focus {
+    --tw-bg-opacity:1;
+    background-color:rgba(var(--color-primary-300), var(--tw-bg-opacity))
 }
-.search-bg-color:hover {
-    background-color: var(--color-neutral-400);
-}
-.search-bg-color:focus {
-    background-color: var(--color-neutral-400);
+
+.hover\:bg-primary-300:hover {
+    --tw-bg-opacity:1;
+    background-color:rgba(var(--color-primary-300), var(--tw-bg-opacity))
 }
 
 /* @font-face {
