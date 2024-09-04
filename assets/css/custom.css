@@ -51,14 +51,14 @@ footer a:hover {
     min-height:120px
 }
 
-.focus\:bg-neutral-300:focus {
+.focus\:bg-neutral-200:focus {
     --tw-bg-opacity:1;
-    background-color:rgba(var(--color-neutral-300), var(--tw-bg-opacity))
+    background-color:rgba(var(--color-neutral-200), var(--tw-bg-opacity))
 }
 
-.hover\:bg-neutral-300:hover {
+.hover\:bg-neutral-200:hover {
     --tw-bg-opacity:1;
-    background-color:rgba(var(--color-neutral-300), var(--tw-bg-opacity))
+    background-color:rgba(var(--color-neutral-200), var(--tw-bg-opacity))
 }
 
 .dark\:focus\:bg-neutral-700:focus:is(.dark *) {
