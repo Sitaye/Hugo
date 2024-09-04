@@ -51,6 +51,16 @@ footer a:hover {
     min-height:120px
 }
 
+.search-bg-color {
+    background-color: var(--color-neutral);
+}
+.search-bg-color:hover {
+    background-color: var(--color-neutral-400);
+}
+.search-bg-color:focus {
+    background-color: var(--color-neutral-400);
+}
+
 /* @font-face {
     font-family: 'SmileySans-Oblique';
     src: url('/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');
