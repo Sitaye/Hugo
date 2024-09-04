@@ -51,24 +51,29 @@ footer a:hover {
     min-height:120px
 }
 
-.focus\:bg-neutral-200:focus {
+.focus\:new-bg-neutral-200:focus {
     --tw-bg-opacity:1;
     background-color:rgba(var(--color-neutral-200), var(--tw-bg-opacity))
 }
 
-.hover\:bg-neutral-200:hover {
+.hover\:new-bg-neutral-200:hover {
     --tw-bg-opacity:1;
     background-color:rgba(var(--color-neutral-200), var(--tw-bg-opacity))
 }
 
-.dark\:focus\:bg-neutral-700:focus:is(.dark *) {
+.dark\:focus\new-bg-neutral-700:focus:is(.dark *) {
     --tw-bg-opacity:1;
     background-color:rgba(var(--color-neutral-700), var(--tw-bg-opacity))
 }
 
-.dark\:hover\:bg-neutral-700:hover:is(.dark *) {
+.dark\:hover\:new-bg-neutral-700:hover:is(.dark *) {
     --tw-bg-opacity:1;
     background-color:rgba(var(--color-neutral-700), var(--tw-bg-opacity))
+}
+
+#search-query {
+    border: none;
+    outline: none; 
 }
 /* @font-face {
     font-family: 'SmileySans-Oblique';

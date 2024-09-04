@@ -166,7 +166,7 @@ function executeQuery(term) {
       resultsHTML =
         resultsHTML +
         `<li class="mb-2">
-          <a class="flex items-center px-3 py-2 rounded-md appearance-none bg-neutral-100 focus:bg-neutral-200 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 focus:outline-dotted focus:outline-transparent focus:outline-2" 
+          <a class="flex items-center px-3 py-2 rounded-md appearance-none bg-neutral-100 focus:new-bg-neutral-200 hover:new-bg-neutral-200 dark:bg-neutral-800 dark:hover:new-bg-neutral-700 dark:focus:new-bg-neutral-700 focus:outline-dotted focus:outline-transparent focus:outline-2" 
           ${linkconfig} tabindex="0">
             <div class="grow">
               <div class="-mb-1 text-lg font-bold">
