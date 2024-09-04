@@ -51,12 +51,25 @@ footer a:hover {
     min-height:120px
 }
 
-.dark\:focus\:bg-secondary-800:focus:is(.dark *) {
+.focus\:bg-neutral-400:focus {
     --tw-bg-opacity:1;
-    background-color:rgba(var(--color-secondary-800), var(--tw-bg-opacity))
+    background-color:rgba(var(--color-neutral-400), var(--tw-bg-opacity))
 }
 
+.hover\:bg-neutral-400:hover {
+    --tw-bg-opacity:1;
+    background-color:rgba(var(--color-neutral-400), var(--tw-bg-opacity))
+}
 
+.dark\:focus\:bg-neutral-700:focus:is(.dark *) {
+    --tw-bg-opacity:1;
+    background-color:rgba(var(--color-neutral-700), var(--tw-bg-opacity))
+}
+
+.dark\:hover\:bg-neutral-700:hover:is(.dark *) {
+    --tw-bg-opacity:1;
+    background-color:rgba(var(--color-neutral-700), var(--tw-bg-opacity))
+}
 /* @font-face {
     font-family: 'SmileySans-Oblique';
     src: url('/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');
