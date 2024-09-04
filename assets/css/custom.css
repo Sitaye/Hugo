@@ -51,15 +51,11 @@ footer a:hover {
     min-height:120px
 }
 
-.focus\:bg-primary-300:focus {
+.dark\:focus\:bg-secondary-800:focus:is(.dark *) {
     --tw-bg-opacity:1;
-    background-color:rgba(var(--color-primary-300), var(--tw-bg-opacity))
+    background-color:rgba(var(--color-secondary-800), var(--tw-bg-opacity))
 }
 
-.hover\:bg-primary-300:hover {
-    --tw-bg-opacity:1;
-    background-color:rgba(var(--color-primary-300), var(--tw-bg-opacity))
-}
 
 /* @font-face {
     font-family: 'SmileySans-Oblique';
