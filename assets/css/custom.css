@@ -47,6 +47,10 @@ footer a:hover {
     color:rgba(var(--color-neutral-200), var(--tw-text-opacity))
 }
 
+.min-h-\[120px\] {
+    min-height:120px
+}
+
 /* @font-face {
     font-family: 'SmileySans-Oblique';
     src: url('/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');

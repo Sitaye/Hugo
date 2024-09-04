@@ -39,7 +39,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 [footer]
   showMenu = false
   showCopyright = true
-  showThemeAttribution = false
+  showThemeAttribution = true
   showAppearanceSwitcher = true
   showScrollToTop = true
 
@@ -112,8 +112,8 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showHero = false
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  # showViews = false
+  # showLikes = false
   showTableOfContents = false
   cardView = false
 
@@ -121,10 +121,10 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showHero = false
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
-  showViews = false
-  showLikes = false
+  # showViews = false
+  # showLikes = false
   showTableOfContents = true
-  groupByYear = false
+  groupByYear = true
   cardView = false
   cardViewScreenWidth = false
 
