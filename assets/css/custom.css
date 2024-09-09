@@ -61,7 +61,7 @@ footer a:hover {
     background-color:rgba(var(--color-neutral-200), var(--tw-bg-opacity))
 }
 
-.dark\:focus\new-bg-neutral-700:focus:is(.dark *) {
+.dark\:focus\:new-bg-neutral-700:focus:is(.dark *) {
     --tw-bg-opacity:1;
     background-color:rgba(var(--color-neutral-700), var(--tw-bg-opacity))
 }
@@ -73,8 +73,13 @@ footer a:hover {
 
 #search-query {
     border: none;
-    outline: none; 
 }
+
+/* #search-query:focus { */
+
+/* } */
+
+
 /* @font-face {
     font-family: 'SmileySans-Oblique';
     src: url('/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');
