@@ -54,7 +54,7 @@ Output a line containing an integer, denoting the answer.
 
 这是 \\(A\\) 题的加强版，\\(A\\) 题前序内容参考：
 
-- {{< article link="/posts/24nowcodersummer/1/a/" >}}
+> {{< article link="/posts/contest/24nowcodersummer/1/a/" >}}
 
 此题可以简化为：\\(A\\) 题中的答案 -【有且仅有一个子序列 **AND** 和为 1 】的数量。
 
@@ -204,4 +204,4 @@ void solve()
 
 第二类斯特林数请参考：
 
-> {{< article link="/math/combinatorialmath/stirlingnumber/">}}
+> {{< article link="/posts/math/combinatorialmath/stirlingnumber/">}}

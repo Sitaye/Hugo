@@ -7,7 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright © 2024 [Orange Tree](https://blog.watercuckoo.top/)</copyright>
-    <lastBuildDate>Fri, 30 Aug 2024 10:31:21 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Sep 2024 22:26:22 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>裴蜀定理</title>
+      <link>https://blog.watercuckoo.top/posts/math/numbertheory/bezout/</link>
+      <pubDate>Tue, 10 Sep 2024 22:26:22 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/posts/math/numbertheory/bezout/</guid>
+      <description>裴蜀定理是一个关于最大公约数的定理。</description>
+      
+    </item>
+    
+    <item>
+      <title>【2024牛客暑期多校训练营3】L</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/l/</link>
+      <pubDate>Mon, 09 Sep 2024 16:55:07 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/l/</guid>
+      <description>1.</description>
+      
+    </item>
+    
+    <item>
+      <title>【2024牛客暑期多校训练营3】B</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/b/</link>
+      <pubDate>Mon, 09 Sep 2024 16:54:39 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/b/</guid>
+      <description>1.</description>
+      
+    </item>
+    
     <item>
       <title>三元环计数</title>
       <link>https://blog.watercuckoo.top/posts/algorithm/graphtheory/triangle/</link>

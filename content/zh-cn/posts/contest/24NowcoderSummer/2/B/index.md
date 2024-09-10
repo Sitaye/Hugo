@@ -61,14 +61,12 @@ For each query, output one integer representing the answer.
 
 对于最小生成树常见的算法有 **Kruskal** 和 **Prim**，Kruskal 常用于**稀疏图**，Prim 常见于**稀疏图**。具体可以参考下面这篇文章：
 
-> {{< article link="posts/algorithm/graphtheory/mst/" >}}
+> {{< article link="/posts/algorithm/graphtheory/mst/" >}}
 
 由于本题对于 Prim 时间复杂度的要求非常高，故使用 Kruskal 搭配边存储优化求解。
 
 Kruskal 的算法就是从小到大遍历所有边，假如给定点集 \\(S\\)，那么在遍历两点相邻的边时，每条边会存两次。因此我们需要降低存的重复边数来减少后续遍历的次数，根据**三元环计数**的原理，我们可以存为**单向边**，每个点存的边数会降为 \\(\sqrt{m}\\)。
 
->三元环计数参考：
->
 >{{< article link="/posts/algorithm/graphtheory/triangle/" >}}
 
 由于有**菊花图**出现的可能，如果单向边的起点从每个菊花图的中心开始，那么中心所连的点可能不在点集 \\(S\\) 中，此时遍历的点数会比较多。但如果从花瓣开始，则会减少这种情况的出现。因此我们需要记录下每个点的**度数**，将从度数小的点指向度数大的边存起来，度数相同则存从下标小到下标大的边。

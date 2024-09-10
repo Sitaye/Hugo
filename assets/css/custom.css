@@ -75,10 +75,13 @@ footer a:hover {
     border: none;
 }
 
-/* #search-query:focus { */
+[type='search']:focus {
+    box-shadow:none;
+}
 
-/* } */
-
+.prose {
+  --tw-prose-quote-borders:rgba(var(--color-primary-400), 1);
+}
 
 /* @font-face {
     font-family: 'SmileySans-Oblique';
