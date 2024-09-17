@@ -46,11 +46,11 @@ enableEmoji = true
 
     [[related.indices]]
         name = "categories"
-        weight = 100
+        weight = 120
 
     [[related.indices]]
         name = "series"
-        weight = 50
+        weight = 150
 
     [[related.indices]]
         name = "authors"

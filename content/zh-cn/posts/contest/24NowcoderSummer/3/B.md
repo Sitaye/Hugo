@@ -44,7 +44,7 @@ Output an integer in a line, denoting the minimum possible distance between the 
 
 ## 2. 思路
 
-我们发现其实最终到墙壁的距离可以表示为 \\(|a_1h_1+a_2h_2+\cdots+a_n+h_n - D|\\)，对于 \\(a_1h_1+a_2h_2+\cdots+a_n+h_n\\) 可以联想到著名的**裴蜀定理**。
+我们发现其实最终到墙壁的距离可以表示为 \\(|a_1h_1+a_2h_2+\cdots+a_nh_n - D|\\)，对于 \\(a_1h_1+a_2h_2+\cdots+a_nh_n\\) 可以联想到著名的**裴蜀定理**。
 
 > {{< article link="/posts/math/numbertheory/bezout/" >}}
 

@@ -1,11 +1,11 @@
 +++
 title = '【2024牛客暑期多校训练营3】A'
 date = 2024-09-09T16:54:33+08:00
-draft = true
+draft = false
 series = ["2024牛客暑期多校训练营3"]
 series_order = 1
 showSummary = false
-tags = [""]
+tags = ["贪心"]
 categories = ["比赛", "2024牛客暑期多校训练营", "2024牛客暑期多校训练营3"]
 
 +++
@@ -44,16 +44,49 @@ If it is possible to transport all the walkers to the other side of the river us
 
 ## 2. 思路
 
+观察每次去的时候尽量为 \\(R\\) 个人，回来的时候为 \\(L\\) 个人的运输方式最优，即每次运输过去 \\(R-L\\) 个人。由于最后一次是 \\(L\\) 个人过去，故总共需要的来回趟数为 \\(\lceil\frac{n-R}{R-D}\rceil\\)。
 
+对于第 \\(i\\) 个人来说，假如作为划船的人，总共能执行的来回趟数为 \\(\lfloor\frac{h_i - 1}{2}\rfloor\\)。我们可以贪心地认为，如果这个人能划船的来回趟数大于等于总共需要的来回趟数，那么这个人就可以一直作为划船的人。反之如果这个人能划船的来回趟数小于总共需要的来回趟数，那么就只利用他能做到的一部分就可以了。
+
+由于需要 \\(L\\) 个人才能发船，最后计算能全程划船的人数和加起来能全程划船的人数。
 
 ## 3. 代码
 
 {{< toggle "C++" >}}
 
 ```cpp
-
+void solve()
+{
+    int n, L, R;
+    std::cin >> n >> L >> R;
+    int num = std::ceil(double(n - R) / (R - L));
+    int sum = 0, p = 0;
+    for (int i = 0; i < n; i++) {
+        int h;
+        std::cin >> h;
+        h = (h - 1) / 2;
+        if (h >= num) {
+            sum ++;
+        }
+        else {
+            p += h;
+            while (p >= num) {
+                p -= num;
+                sum ++;
+            }
+        }
+    }
+    if (sum >= L) {
+        std::cout << "Yes";
+    }
+    else {
+        std::cout << "No";
+    }
+}
 ```
 
 {{< /toggle >}}
 
 ## 4. 总结
+
+这个题考察思维，主要是要贪心地利用每一个人的划船机会。
