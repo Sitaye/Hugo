@@ -3,14 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/c/</loc>
-    <lastmod>2024-09-15T08:35:39+08:00</lastmod>
+    <loc>https://blog.watercuckoo.top/posts/contest/onsite/2019_ccpc_qinhuangdao/f/</loc>
+    <lastmod>2024-09-20T14:19:36+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blog.watercuckoo.top/</loc>
-    <lastmod>2024-09-15T08:35:39+08:00</lastmod>
+    <lastmod>2024-09-20T14:19:36+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://blog.watercuckoo.top/posts/</loc>
-    <lastmod>2024-09-15T08:35:39+08:00</lastmod>
+    <lastmod>2024-09-20T14:19:36+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -41,43 +41,67 @@
     />
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/b/</loc>
+    <loc>https://blog.watercuckoo.top/posts/algorithm/graph_theory/cycle_detection/</loc>
+    <lastmod>2024-09-20T14:18:44+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.watercuckoo.top/posts/contest/onsite/2019_ccpc_qinhuangdao/a/</loc>
+    <lastmod>2024-09-18T23:07:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.watercuckoo.top/posts/deep_learning/cnn/seven_typical_cnn/</loc>
+    <lastmod>2024-09-17T22:12:48+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/c/</loc>
+    <lastmod>2024-09-15T08:35:39+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/b/</loc>
     <lastmod>2024-09-15T08:35:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/a/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/a/</loc>
     <lastmod>2024-09-15T08:35:37+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/math/numbertheory/bezout/</loc>
+    <loc>https://blog.watercuckoo.top/posts/math/number_theory/bezout/</loc>
     <lastmod>2024-09-10T22:26:22+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/l/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/l/</loc>
     <lastmod>2024-09-09T16:55:07+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/b/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/b/</loc>
     <lastmod>2024-09-09T16:54:39+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/a/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/a/</loc>
     <lastmod>2024-09-09T16:54:33+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/algorithm/graphtheory/triangle/</loc>
+    <loc>https://blog.watercuckoo.top/posts/algorithm/graph_theory/triangle/</loc>
     <lastmod>2024-08-30T10:31:21+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -89,67 +113,55 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/algorithm/graphtheory/mst/</loc>
+    <loc>https://blog.watercuckoo.top/posts/algorithm/graph_theory/mst/</loc>
     <lastmod>2024-08-23T17:21:29+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/i/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/i/</loc>
     <lastmod>2024-07-31T19:14:56+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/h/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/h/</loc>
     <lastmod>2024-07-31T19:14:54+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/e/</loc>
-    <lastmod>2024-07-31T19:14:38+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/c/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/c/</loc>
     <lastmod>2024-07-31T19:14:33+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/b/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/b/</loc>
     <lastmod>2024-07-31T19:14:31+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/math/combinatorialmath/stirlingnumber/</loc>
+    <loc>https://blog.watercuckoo.top/posts/math/combinatorial_math/stirling_number/</loc>
     <lastmod>2024-07-29T20:23:30+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/h/</loc>
-    <lastmod>2024-07-27T12:12:36+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/c/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/c/</loc>
     <lastmod>2024-07-26T21:35:59+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/b/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/b/</loc>
     <lastmod>2024-07-26T20:24:57+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/a/</loc>
+    <loc>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/a/</loc>
     <lastmod>2024-07-26T20:24:54+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

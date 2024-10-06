@@ -36,6 +36,11 @@
   pageRef = "categories/数据结构"
   weight = 40
 
+[[main]]
+  name = "深度学习"
+  pageRef = "categories/深度学习"
+  weight = 50
+
 
 # [[main]]
 #  name = "分类"

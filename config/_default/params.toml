@@ -19,6 +19,7 @@ replyByEmail = false
 
 disableImageOptimization = false
 disableTextInHeader = false
+# backgroundImageWidth = 1200
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
@@ -30,7 +31,7 @@ smartTOCHideUnfocusedChildren = true
 pygmentsUseClasses = true
 pygmentsCodefences = true
 
-iteaDefaultServer = "https://git.fsfe.org"
+giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [header]
@@ -49,7 +50,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
-  showMoreLinkDest = "posts"
+  showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
@@ -85,7 +86,6 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showComments = true
   # sharingLinks = [ "twitter", "reddit", "facebook", "email", "telegram"]
   showZenMode = true
-  
 
 [list]
   showHero = false  
@@ -101,8 +101,8 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   orderByWeight = false
   groupByYear = true
   cardView = false
-  cardViewScreenWidth = true
-  constrainItemsWidth = true
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]
@@ -145,6 +145,11 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   # websiteid = "ABC12345"
   # domain = "llama.yoursite.com"
   # dataDomains = "yoursite.com,yoursite2.com"
+  # enableTrackEvent = true
+  
+[selineAnalytics]
+  # token = "XXXXXX"
+  # enableTrackEvent = true
 
 [buymeacoffee]
   # identifier = ""

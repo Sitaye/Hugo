@@ -7,84 +7,124 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>Copyright © 2024 [Orange Tree](https://blog.watercuckoo.top/)</copyright>
-    <lastBuildDate>Sun, 15 Sep 2024 08:35:39 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Sep 2024 14:19:36 +0800</lastBuildDate><atom:link href="https://blog.watercuckoo.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2019 CCPC 秦皇岛站 - F</title>
+      <link>https://blog.watercuckoo.top/posts/contest/onsite/2019_ccpc_qinhuangdao/f/</link>
+      <pubDate>Fri, 20 Sep 2024 14:19:36 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/posts/contest/onsite/2019_ccpc_qinhuangdao/f/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>环路检测</title>
+      <link>https://blog.watercuckoo.top/posts/algorithm/graph_theory/cycle_detection/</link>
+      <pubDate>Fri, 20 Sep 2024 14:18:44 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/posts/algorithm/graph_theory/cycle_detection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>2019 CCPC 秦皇岛站 - A</title>
+      <link>https://blog.watercuckoo.top/posts/contest/onsite/2019_ccpc_qinhuangdao/a/</link>
+      <pubDate>Wed, 18 Sep 2024 23:07:30 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/posts/contest/onsite/2019_ccpc_qinhuangdao/a/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>经典卷积神经网络</title>
+      <link>https://blog.watercuckoo.top/posts/deep_learning/cnn/seven_typical_cnn/</link>
+      <pubDate>Tue, 17 Sep 2024 22:12:48 +0800</pubDate>
+      
+      <guid>https://blog.watercuckoo.top/posts/deep_learning/cnn/seven_typical_cnn/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>Codeforces Round 972 (Div. 2) - C</title>
-      <link>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/c/</link>
+      <link>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/c/</link>
       <pubDate>Sun, 15 Sep 2024 08:35:39 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/c/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/c/</guid>
+      <description></description>
       
     </item>
     
     <item>
       <title>Codeforces Round 972 (Div. 2) - B</title>
-      <link>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/b/</link>
+      <link>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/b/</link>
       <pubDate>Sun, 15 Sep 2024 08:35:38 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/b/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/b/</guid>
+      <description></description>
       
     </item>
     
     <item>
       <title>Codeforces Round 972 (Div. 2) - A</title>
-      <link>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/a/</link>
+      <link>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/a/</link>
       <pubDate>Sun, 15 Sep 2024 08:35:37 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/codeforces/codeforcesround972_div2/a/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/codeforces/codeforces_round_972_div2/a/</guid>
+      <description></description>
       
     </item>
     
     <item>
       <title>裴蜀定理</title>
-      <link>https://blog.watercuckoo.top/posts/math/numbertheory/bezout/</link>
+      <link>https://blog.watercuckoo.top/posts/math/number_theory/bezout/</link>
       <pubDate>Tue, 10 Sep 2024 22:26:22 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/math/numbertheory/bezout/</guid>
-      <description>裴蜀定理是一个关于最大公约数的定理。</description>
+      <guid>https://blog.watercuckoo.top/posts/math/number_theory/bezout/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营3】L</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/l/</link>
+      <title>2024 牛客暑期多校训练营 3 - L</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/l/</link>
       <pubDate>Mon, 09 Sep 2024 16:55:07 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/l/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/l/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营3】B</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/b/</link>
+      <title>2024 牛客暑期多校训练营 3 - B</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/b/</link>
       <pubDate>Mon, 09 Sep 2024 16:54:39 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/b/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/b/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营3】A</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/a/</link>
+      <title>2024 牛客暑期多校训练营 3 - A</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/a/</link>
       <pubDate>Mon, 09 Sep 2024 16:54:33 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/3/a/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/3/a/</guid>
+      <description></description>
       
     </item>
     
     <item>
       <title>三元环计数</title>
-      <link>https://blog.watercuckoo.top/posts/algorithm/graphtheory/triangle/</link>
+      <link>https://blog.watercuckoo.top/posts/algorithm/graph_theory/triangle/</link>
       <pubDate>Fri, 30 Aug 2024 10:31:21 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/algorithm/graphtheory/triangle/</guid>
-      <description>三元环计数是图论中一个比较重要的问题，用于求解无向图中三元环的个数。</description>
+      <guid>https://blog.watercuckoo.top/posts/algorithm/graph_theory/triangle/</guid>
+      <description></description>
       
     </item>
     
@@ -94,117 +134,97 @@
       <pubDate>Mon, 26 Aug 2024 11:47:44 +0800</pubDate>
       
       <guid>https://blog.watercuckoo.top/posts/data_structure/dsu/</guid>
-      <description>并查集（DSU）是一种负责合并、查询的集合，用于判断元素之间的所属关系。</description>
+      <description></description>
       
     </item>
     
     <item>
       <title>最小生成树</title>
-      <link>https://blog.watercuckoo.top/posts/algorithm/graphtheory/mst/</link>
+      <link>https://blog.watercuckoo.top/posts/algorithm/graph_theory/mst/</link>
       <pubDate>Fri, 23 Aug 2024 17:21:29 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/algorithm/graphtheory/mst/</guid>
-      <description>最小生成树（MST）是连通加权无向图中权重最小的生成树。</description>
+      <guid>https://blog.watercuckoo.top/posts/algorithm/graph_theory/mst/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营2】I</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/i/</link>
+      <title>2024 牛客暑期多校训练营 2 - I</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/i/</link>
       <pubDate>Wed, 31 Jul 2024 19:14:56 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/i/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/i/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营2】H</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/h/</link>
+      <title>2024 牛客暑期多校训练营 2 - H</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/h/</link>
       <pubDate>Wed, 31 Jul 2024 19:14:54 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/h/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/h/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营2】E</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/e/</link>
-      <pubDate>Wed, 31 Jul 2024 19:14:38 +0800</pubDate>
-      
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/e/</guid>
-      <description>1.</description>
-      
-    </item>
-    
-    <item>
-      <title>【2024牛客暑期多校训练营2】C</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/c/</link>
+      <title>2024 牛客暑期多校训练营 2 - C</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/c/</link>
       <pubDate>Wed, 31 Jul 2024 19:14:33 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/c/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/c/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营2】B</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/b/</link>
+      <title>2024 牛客暑期多校训练营 2 - B</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/b/</link>
       <pubDate>Wed, 31 Jul 2024 19:14:31 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/2/b/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/2/b/</guid>
+      <description></description>
       
     </item>
     
     <item>
       <title>第二类斯特林数</title>
-      <link>https://blog.watercuckoo.top/posts/math/combinatorialmath/stirlingnumber/</link>
+      <link>https://blog.watercuckoo.top/posts/math/combinatorial_math/stirling_number/</link>
       <pubDate>Mon, 29 Jul 2024 20:23:30 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/math/combinatorialmath/stirlingnumber/</guid>
-      <description>第二类斯特林数是组合数学上常见的一种概念，用于解决集合拆分的问题。</description>
+      <guid>https://blog.watercuckoo.top/posts/math/combinatorial_math/stirling_number/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营1】H</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/h/</link>
-      <pubDate>Sat, 27 Jul 2024 12:12:36 +0800</pubDate>
-      
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/h/</guid>
-      <description>1.</description>
-      
-    </item>
-    
-    <item>
-      <title>【2024牛客暑期多校训练营1】C</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/c/</link>
+      <title>2024 牛客暑期多校训练营 1 - C</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/c/</link>
       <pubDate>Fri, 26 Jul 2024 21:35:59 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/c/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/c/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营1】B</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/b/</link>
+      <title>2024 牛客暑期多校训练营 1 - B</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/b/</link>
       <pubDate>Fri, 26 Jul 2024 20:24:57 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/b/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/b/</guid>
+      <description></description>
       
     </item>
     
     <item>
-      <title>【2024牛客暑期多校训练营1】A</title>
-      <link>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/a/</link>
+      <title>2024 牛客暑期多校训练营 1 - A</title>
+      <link>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/a/</link>
       <pubDate>Fri, 26 Jul 2024 20:24:54 +0800</pubDate>
       
-      <guid>https://blog.watercuckoo.top/posts/contest/24nowcodersummer/1/a/</guid>
-      <description>1.</description>
+      <guid>https://blog.watercuckoo.top/posts/contest/24_nowcoder_summer/1/a/</guid>
+      <description></description>
       
     </item>
     
